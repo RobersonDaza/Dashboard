@@ -96,7 +96,7 @@ body {
 }
 
 .main .widget form button{
-    background-color: #35ae6b;
+    background-color: #0275db;
     cursor: pointer;
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -216,6 +216,52 @@ body {
 	background-color: #c9302c;
 }
 .main .comentarios .comentario .botones .bloquear:hover{
-	background-color: #acacac;
+	background-color: #F5AB35;
 	color: #fff;
+}
+
+/*Mediaqueries*/
+
+@media screen and (max-width: 1300px) {
+	.barra-lateral{
+		min-width: auto;
+	}
+
+	.barra-lateral .logo{
+		display: none;
+	}
+
+	.barra-lateral .menu a span{
+		display: none;
+	}
+
+	.barra-lateral .menu a i{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 575px){
+	.barra-lateral{
+		min-height: auto;
+	}
+
+	.barra-lateral .menu a{
+		display: inline-block;
+		border-bottom: none;
+	}
+
+	.main .widget form button{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.main .comentarios .comentario .foto{
+		width: 30px:auto;
+		height: 30px;
+	}
+
+	.main .comentarios .comentario .botones button{
+		width: 100%;
+	}
 }
